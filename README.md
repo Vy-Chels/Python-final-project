@@ -1,70 +1,75 @@
-# COVID-19 Data Analysis Dashboard
+# COVID-19 Global Data Analysis
 
 ## Project Description
-An interactive dashboard for analyzing and visualizing COVID-19 data across different countries. The project provides insights into cases, deaths, vaccinations, and hospitalization trends using real-time data from Our World in Data.
+This project provides a comprehensive analysis of COVID-19 data using the Our World in Data (OWID) dataset. It includes interactive visualizations and statistical analysis to understand the global impact of the pandemic, track key metrics, and identify patterns across different countries and regions.
 
 ## Project Objectives
-1. Import and clean COVID-19 global data
-2. Analyze time trends (cases, deaths, vaccinations)
-3. Compare metrics across countries/regions
-4. Visualize trends with interactive charts and maps
-5. Create an interactive dashboard for data exploration
+- Analyze global COVID-19 trends and patterns
+- Compare COVID-19 metrics across different countries
+- Visualize key indicators such as:
+  - Daily new cases and deaths
+  - Vaccination rates
+  - Testing statistics
+  - Hospitalization data
+- Identify correlations between different COVID-19 metrics
+- Create interactive dashboards for data exploration
 
 ## Tools and Libraries Used
 - **Data Processing & Analysis**
-  - pandas: Data manipulation and analysis
-  - numpy: Numerical computations
-  - plotly: Interactive visualizations
-  - matplotlib & seaborn: Statistical visualizations
+  - pandas (≥1.5.0)
+  - numpy (≥1.21.0)
+  
+- **Data Visualization**
+  - matplotlib (≥3.5.0)
+  - seaborn (≥0.11.0)
+  - plotly (≥5.13.0)
+  
+- **Development Environment**
+  - jupyter (1.0.0)
+  - notebook (7.0.0)
+  
+- **Web Application**
+  - streamlit (≥1.22.0)
+  
+- **Data Import**
+  - openpyxl (≥3.0.0)
+  - xlrd (≥2.0.0)
 
-- **Dashboard Development**
-  - Streamlit: Interactive web application
-  - openpyxl & xlrd: Excel file support
+## How to Run/View the Project
 
-## How to Run the Project
+### Prerequisites
+- Python 3.7 or higher
+- pip (Python package installer)
 
-1. **Install Dependencies**
+### Installation Steps
+1. Clone this repository:
+   ```bash
+   git clone [repository-url]
+   cd [repository-name]
+   ```
+
+2. Install required packages:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Run the Dashboard**
+3. Run the Jupyter notebook:
    ```bash
-   streamlit run covid_dashboard.py
+   jupyter notebook covid_analysis.ipynb
    ```
 
-3. **Access the Dashboard**
-   - The dashboard will open in your default web browser
-   - If it doesn't open automatically, navigate to the URL shown in the terminal (typically http://localhost:8501)
-
-## Key Features
-- Interactive country selection
-- Customizable date range
-- Multiple visualization types:
-  - Time series plots
-  - Vaccination progress
-  - Hospitalization data
-  - Global choropleth map
-- Data download capability
-- Real-time metrics updates
+4. For the interactive dashboard:
+   ```bash
+   streamlit run covid_analysis.ipynb
+   ```
 
 ## Insights and Reflections
-1. **Data Visualization Impact**
-   - Interactive visualizations make complex data more accessible
-   - Time series analysis reveals important patterns in pandemic progression
-   - Comparative analysis highlights differences in country responses
-
-2. **Technical Learnings**
-   - Streamlit provides an efficient way to create interactive dashboards
-   - Plotly enables sophisticated interactive visualizations
-   - Data caching improves dashboard performance
-
-3. **Future Improvements**
-   - Add more advanced statistical analysis
-   - Include predictive modeling
-   - Enhance mobile responsiveness
-   - Add more detailed regional analysis
+- The project demonstrates the power of data visualization in understanding complex global health crises
+- Interactive dashboards make it easier to explore and understand COVID-19 trends
+- The analysis reveals the importance of timely and accurate data collection during pandemics
+- Cross-country comparisons highlight the effectiveness of different public health strategies
+- The project showcases how data science can contribute to public health understanding and decision-making
 
 ## Data Source
-- Our World in Data COVID-19 dataset
-- Updated daily with global COVID-19 statistics
+The analysis uses the Our World in Data (OWID) COVID-19 dataset, which provides comprehensive and up-to-date information about the pandemic across different countries and regions.
+
